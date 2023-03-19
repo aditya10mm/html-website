@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('cloning') { 
             steps {
-                git branch: 'main', credentialsId: 'aditya', url: 'https://github.com/aditya0660/website-jenkins.git' 
+                git branch: 'main', credentialsId: '1', url: 'https://github.com/aditya10mm/html-website.git' 
             }
         }
         stage('deploying') { 
