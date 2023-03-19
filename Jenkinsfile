@@ -10,6 +10,7 @@ pipeline {
             steps {
                 sh 'ls'
                 sh 'pwd'
+                sh 'ssh -o StrictHostKeyChecking=no root@172.21.242.50'
                 sh 'scp -r $(pwd)/* root@172.21.242.50:/home'
                 
             }
