@@ -10,7 +10,7 @@ pipeline {
             steps {
                 sh 'ls'
                 sh 'pwd'
-                sh 'cp $(pwd) . scp -r root@172.21.242.50:/home'
+                sh 'scp -r $(pwd)/* root@172.21.242.50:/home'
                 
             }
         }        
