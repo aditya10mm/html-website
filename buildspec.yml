@@ -12,6 +12,6 @@ phases:
   post build:
     commands:
       - echo configure nginx
-artifacts:
-  files
-    - /var/www/html/index.html
+# artifacts:
+#   files
+#     - /var/www/html/index.html
