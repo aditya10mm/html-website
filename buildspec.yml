@@ -1,6 +1,6 @@
 version: 0.2
 phases:
-  pre-build:
+  pre_build:
     commands:
       - echo install nginx
       - sudo apt update -y
@@ -9,7 +9,7 @@ phases:
     commands:
       - echo build started on `date`
       - cp index.html /var/www/html/
-  post build:
+  post_build:
     commands:
       - echo configure nginx
 # artifacts:
